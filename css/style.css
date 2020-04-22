@@ -1,0 +1,69 @@
+/* main-styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: nunito, sans-serif;
+	line-height: 1.4;
+}
+
+/* utilities */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+}
+
+/* header */
+header {
+	background: url(../img/Banner-BG-image.jpg) no-repeat center/cover;
+	height: 100vh;
+	text-align: center;
+	padding: 1rem 0;
+	color: #fff;
+}
+
+.main-nav {
+	justify-content: space-between;
+}
+
+.logo {
+	display: none;
+}
+
+#toggle {
+	display: none;
+}
+
+.main-nav label {
+	font-size: 2rem;
+	align-self: center;
+	margin-bottom: 1rem;
+}
+
+.menu {
+	position: absolute;
+	top: 110px;
+	text-align: center;
+	width: 100%;
+	background: #eff2f7;
+	height: calc;
+}
+
+.menu li a{
+	display: inline-block;
+	color: #333;
+	padding: 1rem;
+}
