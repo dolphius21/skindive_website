@@ -40,54 +40,45 @@ header {
 }
 
 .header {
+  background: #fff;
+  width: 100%;
+  height: 65px;
+}
+
+.logo-colored {
+	position: absolute;
+	top: 1rem;
+	left: 0.5rem;
+	width: 200px;
+}
+
+.logo-white,
+.phone,
+.social-media {
 	display: none;
 }
 
-
-/* mobile header styles */
-
-.mobile-header {
-	position: fixed;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	background: #fff;
-	color: #333;
-	padding: 0.5rem;
-	box-shadow: 0 0 5px 0 #333;
-	z-index: 3;
-}
-
-.mobile-logo {
-	width: 220px;
-}
-
-.mobile-logo a {
-	line-height: 0;
-}
+/* hamburger styles */
 
 #toggler {
 	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 3;
-	cursor: pointer;
+	top: 0.75rem;
+	right: 0.5rem;
+  height: 50px;
 	width: 50px;
-	height: 60px;
 	opacity: 0;
+	cursor: pointer;
+	z-index: 2;
 }
-
-
-/* hamburger styles */
 
 .hamburger {
 	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 2;
-	width: 60px;
-	height: 60px;
-	padding: 1rem;
+	top: 0.5rem;
+	right: 0.5rem;
+	z-index: 1;
+	width: 45px;
+	height: 50px;
+	padding: 0.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -96,57 +87,69 @@ header {
 .hamburger div {
 	position: relative;
 	flex: none;
-	width: 100%;
 	height: 2px;
-	background: #333;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transition: all 0.4s ease;
+	width: 100%;
+	background: #1b5577;
+	transition: all 0.4s ease-in-out;
 }
 
-.hamburger div::before,
-.hamburger div::after {
+.hamburger div:before,
+.hamburger div:after {
 	content: '';
 	position: absolute;
-	width: 100%;
 	height: 2px;
-	background: #333;
+	width: 30px;
+	background: #1b5577;
 	top: -10px;
 }
 
-.hamburger div::after {
+.hamburger div:after {
 	top: 10px;
 }
 
 
 /* hamburger animation */
 
-#toggler:checked + .hamburger > div {
+#toggler:checked ~ .hamburger div {
 	transform: rotate(135deg);
 }
 
-#toggler:checked + .hamburger > div::before,
-#toggler:checked + .hamburger > div::after {
+#toggler:checked ~ .hamburger div:before,
+#toggler:checked ~ .hamburger div:after {
 	top: 0;
 	transform: rotate(90deg);
+} 
+
+
+/* menu styles */
+
+.menu {
+  position: absolute;
+  top: 65px;
+  left: 100%;
+  background: #1b5577;
+  width: 100%;
+  height: calc(100vh - 75px);
+  text-align: center;
+  transition: all 0.5s ease;
 }
 
-
-/* menu style */
-
-.main-nav {
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	background: #fff;
-	top: 59px;
-	left: 100%;
-	z-index: 1;
-	text-align: center;
-	transition: all 0.5s;
+.menu li {
+  display: block;
+	padding: 2rem;
+	border-bottom: 1px dotted #216789;
 }
 
-#toggler:checked + .main-nav {
-	left: 0;
+.menu li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.active, .menu a:hover {
+  color: #2fafe5;
+  transition: 0.3s ease;
+}
+
+#toggler:checked ~ .menu {
+  left: 0;
 }
