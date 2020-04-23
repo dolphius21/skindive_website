@@ -160,11 +160,11 @@ header {
 
 .banner-content {
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: start;
 	align-items: center;
 	text-align: center;
 	height: calc(100vh - 65px);
-	padding: 2rem 1rem;
+	padding: 3rem 1rem;
 }
 
 .banner-content h1 {
@@ -179,4 +179,7 @@ header {
 
 .banner-content img {
 	width: 50px;
+	position: absolute;
+	bottom: 10px;
+	display: block;
 }
