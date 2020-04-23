@@ -34,7 +34,8 @@ h1, h2, h3, h4, h5 {
 /* header styles*/
 
 header {
-	background: url(../img/Banner-BG-image.jpg) no-repeat center/cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+							url(../img/Banner-BG-image.jpg) no-repeat center/cover;
 	height: 100vh;
 	color: #fff;
 }
@@ -152,4 +153,30 @@ header {
 
 #toggler:checked ~ .menu {
   left: 0;
+}
+
+
+/* banner styles */
+
+.banner-content {
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	height: calc(100vh - 65px);
+	padding: 2rem 1rem;
+}
+
+.banner-content h1 {
+	font-size: 3rem;
+	line-height: 3rem;
+	margin-bottom: 1rem;
+}
+
+.banner-content p {
+	font-size: 1.25rem;
+}
+
+.banner-content img {
+	width: 50px;
 }
