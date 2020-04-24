@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://kit.fontawesome.com/bdbc2939a5.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://use.typekit.net/ofq3edn.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -31,16 +31,16 @@
 				<input type="checkbox" id="toggler">
 				<div class="hamburger"><div></div></div>
 				<ul class="menu">
-					<li><a class="active" href="#">Home</a></li>
+					<li><a id="active" href="index.html">Home</a></li>
 					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
+					<li><a href="#">Instructors</a></li>
+					<li><a href="#">Gallery</a></li>
 					<li><a href="#">Contact</a></li>
-					<li><a href="#">Feedback</a></li>
 				</ul>
 			</nav>
 			<div class="banner-content flex">
 				<div>
-					<h1>ENJOY DIVING WITH US!</h1>
+					<h1>ENJOY DIVING WITH US</h1>
 					<p>We offer freediving sessions that is open for swimmers and non-swimmers.</p>
 				</div>
 				<img src="img/arrow.svg" alt="arrow">
@@ -48,41 +48,42 @@
     </div>
 	</header>
 	<section class="intro">
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-		<a href="#">Find out more</a>
+		<div class="container pad-2">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<a href="#">Find out more</a>
+		</div>
 	</section>
-	<section class="inclusions">
-		<div class="container">
+	<section class="inclusions pad-2">
+		<div class="container flex">
 			<div class="col-container">
 				<div class="row-container">
-					<div class="main-icon"></div>
+					<div class="inc-icon-1"></div>
 					<h3>Best Equipment</h3>
 					<p>Our agency provides first-class equipment for all our clients, regardless of their level.</p>
 				</div>
 				<div class="row-container">
-					<div class="main-icon"></div>
+					<div class="inc-icon-2"></div>
 					<h3>Exciting Places</h3>
 					<p>We offer a variety of destinations including the most exotic ones located all over the philippines.</p>
 				</div>
 			</div>
 			<div class="col-container">
 				<div class="row-container">
-					<div class="main-icon"></div>
+					<div class="inc-icon-3"></div>
 					<h3>100% Safety</h3>
 					<p>We pay a lot of attention to diver’s safety at all times, as there’s always some risk involved in it.</p>
 				</div>
 				<div class="row-container">
-					<div class="main-icon"></div>
+					<div class="inc-icon-4"></div>
 					<h3>Instructors</h3>
 					<p>We are a team of talented and experienced diving instructors always ready to help you.</p>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="why-choose">
-		<div class="container">
+	<section class="why-choose pad-2">
+		<div class="container flex">
+			<h2>Why Choose Us</h2>
 			<div class="col-container">
 				<img src="img/Why-Choose-Us-01.jpg" alt="Two freedivers">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -99,12 +100,14 @@
 			</div>
 		</div>
 	</section>
-	<section class="Newsletter">
-		<div class="container">
-			<h3>Newsletter</h3>
-			<p>Subscribe to our newsletter</p>
+	<section class="newsletter pad-2">
+		<div class="container flex">
+			<div class="content">
+				<h2>Newsletter</h2>
+				<p>Subscribe to our newsletter</p>
+			</div>
 			<input type="email" id="email" placeholder="Enter your e-mail address">
-			<input type="submit" value="SUBSCRIBE">
+			<button class="btn-primary" type="submit">SUBSCRIBE</button>
 		</div>
 	</section>
 	<section class="instruction">
