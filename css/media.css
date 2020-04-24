@@ -1,0 +1,51 @@
+@media only screen and (min-width: 568px) {
+  .header {
+    background: unset;
+    height: 100%;
+    padding: 2rem 0;
+    display: flex;
+  }
+
+  .header a {
+    color: #fff;
+    display: block;
+  }
+
+  .header .logo-white,
+  .header .phone,
+  .header .social-media {
+    display: block;
+  }
+
+  .header .logo-white {
+    flex: 0 0 20%;
+  }
+
+  .header .phone {
+    flex: 0 0 40%;
+    align-items: center;
+  }
+
+  .header .social-media {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex: 0 0 40%;
+  }
+
+  .social-media a {
+    margin-left: 1rem;
+  }
+
+  .logo-colored {
+    display: none;
+  }
+
+  .logo-white {
+    margin: 0 auto;
+    width: 250px;
+  }
+
+@media only screen and (min-width: 1024px) {
+
+}
