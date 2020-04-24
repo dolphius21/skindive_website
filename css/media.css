@@ -1,4 +1,4 @@
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 768px) {
   .header {
     background: unset;
     height: 100%;
@@ -12,28 +12,36 @@
   }
 
   .header .logo-white,
-  .header .phone,
   .header .social-media {
     display: block;
   }
 
   .header .logo-white {
-    flex: 0 0 20%;
+    flex: 0 0 30%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .header .logo-white img {
+    display: block;
   }
 
   .header .phone {
-    flex: 0 0 40%;
+    flex: 0 0 35%;
+    display: inline-flex;
     align-items: center;
+    padding-left: 1rem;  
   }
 
   .header .social-media {
     display: flex;
-    justify-content: end;
     align-items: center;
-    flex: 0 0 40%;
+    justify-content: flex-end;
+    flex: 0 0 35%;
+    padding-right: 1rem;
   }
 
-  .social-media a {
+  .header .social-media a {
     margin-left: 1rem;
   }
 
@@ -41,9 +49,9 @@
     display: none;
   }
 
-  .logo-white {
-    margin: 0 auto;
-    width: 250px;
+
+  .hamburger {
+    display: none;
   }
 
 @media only screen and (min-width: 1024px) {
