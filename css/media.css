@@ -60,6 +60,10 @@
 
   /* menu styles */
 
+  .main-nav .container {
+    padding: 0 1rem;
+  }
+
   .menu {
     position: unset;
     display: flex;
@@ -134,11 +138,75 @@
   .row-left .content,
   .row-right .content {
     flex: 0 0 65%;
-    line-height: 1.5;
   }
 
 
-  /*  */
+  /* why choose us */
+
+  .why-choose .flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .why-choose .col-container {
+    flex: 0 0 47%;
+    padding: 1rem 0;
+  }
+
+
+  /* newsletter */
+
+  .newsletter {
+    text-align: left;
+    max-height: 330px;
+  }
+
+  .newsletter .flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+  }
+
+  .newsletter .content {
+    flex: 0 0 30%;
+  }
+
+  .newsletter input {
+    flex: 0 0 40%;
+  }
+  
+  .newsletter button {
+    flex: 0 0 20%;
+  }
+
+  
+  /* instructors */
+
+  .instructors .flex {
+    flex-direction: row;
+  }
+  
+  
+  /* footer */
+
+ 
+  footer .flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sub-footer .col-1 {
+    flex: 0 0 30%;
+  }
+  .sub-footer .col-2,
+  .sub-footer .col-3  {
+    flex: 0 0 25%;
+  }
+
+  .sub-footer .col-2 .col-container {
+    justify-content: flex-start;
+  }
 
 }
 
