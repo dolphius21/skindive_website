@@ -418,8 +418,9 @@ footer .col-3 {
 	padding: 1rem 0;
 } 
 
-.sub-footer .col-1 p {
-	line-height: 1.5;
+.sub-footer .col-1 .logo-white {
+	display: block;
+	width: 200px;
 	margin-bottom: 1rem;
 }
 
