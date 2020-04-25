@@ -288,7 +288,8 @@ header {
 	background: url(../img/instructors-icon.png) no-repeat center;
 }
 
-.inclusions p {
+.inclusions .row-left,
+.inclusions .row-right {
 	margin-bottom: 2rem;
 }
 

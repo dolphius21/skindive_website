@@ -1,4 +1,7 @@
 @media only screen and (min-width: 768px) {
+  
+  /* header styles */
+
   .header {
     background: unset;
     height: 100%;
@@ -53,6 +56,92 @@
   .hamburger {
     display: none;
   }
+
+
+  /* menu styles */
+
+  .menu {
+    position: unset;
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    height: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+  }
+
+  .menu a {
+    padding: 1rem 2rem;
+    border: none;
+  }
+
+
+  /* intro styles */
+
+  .intro {
+    padding: 1rem;
+  }
+
+  .intro p {
+    max-width: 1000px;
+    margin: 0 auto 1rem;
+  }
+
+
+  /* inclusions styles */
+
+  .inclusions {
+    background: url(../img/Features-BG.jpg) no-repeat center/cover;
+  
+  }
+
+  .inclusions .flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .inclusions .col-1,
+  .inclusions .col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 35%;
+    height: 450px;
+    padding: 2rem 0 1rem;
+  }
+
+  .inclusions .col-1 {
+    text-align: right;
+  }
+
+  .inclusions .col-2 {
+    text-align: left;
+  }
+
+  .inclusions .row-left,
+  .inclusions .row-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .inclusions .row-left{
+    flex-direction: row-reverse;
+  }
+
+  .row-left .content,
+  .row-right .content {
+    flex: 0 0 65%;
+    line-height: 1.5;
+  }
+
+
+  /*  */
+
+}
+
 
 @media only screen and (min-width: 1024px) {
 
