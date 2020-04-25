@@ -193,8 +193,8 @@ header {
   color: #fff;
 	text-transform: uppercase;
 	display: block;
-	padding: 2rem;
-	border-bottom: 1px dotted #216789;
+	padding: 1.5rem;
+	border-bottom: 1px dotted #25749b;
 }
 
 #active {
@@ -376,6 +376,10 @@ header {
 	color: #fff;
 }
 
+input:focus::placeholder {
+  color: transparent;
+}
+
 input[type=text]:focus {
 	border: 1px solid var(--tertiary-color);
 }
@@ -433,7 +437,7 @@ footer .col-3 {
 
 .sub-footer ul li {
 	padding: 0.5rem 0;
-	border-bottom: 1px dotted #216789;
+	border-bottom: 1px dotted #25749b;
 }
 
 .info .row-container {

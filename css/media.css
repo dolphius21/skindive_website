@@ -80,7 +80,6 @@
     border: none;
   }
 
-
   /* intro styles */
 
   .intro {
@@ -146,6 +145,10 @@
   
   .newsletter button {
     flex: 0 0 20%;
+  }
+
+  .newsletter input {
+    text-align: left;
   }
 
   
