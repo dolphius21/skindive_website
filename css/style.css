@@ -43,6 +43,10 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 }
 
+.grid {
+	display: grid;
+}
+
 .pad-1 {
 	padding: 1rem;
 }
@@ -383,10 +387,6 @@ button {
 
 
 /* instructors styles */
-
-.instructors .container {
-	display: grid;
-}
 
 .instructors {
 	text-align: center;
